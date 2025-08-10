@@ -1,0 +1,451 @@
+@import url('https://fonts.googleapis.com/css?family=Michroma&display=swap');
+
+
+body {
+    font-family: Michroma, serif;
+    background: linear-gradient(90deg, #00009c 0%, #000000 100%);
+}
+
+p {
+    color: aquamarine;
+}
+
+.nav-link {
+    color:aquamarine;
+}
+
+.navbar-nav .nav-link.active {
+    color:rgb(185, 212, 32);
+
+}
+
+
+.logo-circle {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, rgb(127, 150, 255), #4dd0e1);
+  color: rgb(138, 243, 19);
+  font-size: 2rem;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  box-shadow: 0 4px 18px rgba(0, 255, 200, 0.4);
+  text-shadow: 0 2px 6px rgba(255, 255, 255, 0.4);
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  transition: all 0.3s ease;
+}
+
+.logo-circle:hover {
+  background: linear-gradient(135deg, #4dd0e1, aquamarine);
+  transform: scale(1.05);
+  cursor: default;
+}
+
+
+.logo-btn:hover {
+  opacity: 0.8;
+}
+
+
+.logo-btn:hover {
+  opacity: 0.8;
+}
+
+
+.navbar-brand img {
+    width: 40px;
+}
+
+.navbar-toggler {
+    background-color: rgb(199, 231, 13);
+}
+
+.sidebar {
+    color:aquamarine;
+    background: linear-gradient(270deg, #00009c 0%, #000000 100%);
+
+
+}
+
+.card {
+    background: linear-gradient(270deg, #00009c 0%, #000000 100%);
+    color: aquamarine;
+}
+
+.card a {
+    text-decoration: none;
+    color: aquamarine;
+}
+
+.slide-text,
+.footer-text {
+    color: aquamarine;
+    margin: auto auto;
+}
+
+footer,
+.btn-outline-primary {
+    background: linear-gradient(270deg, #00009c 0%, #000000 100%);
+
+}
+.hero-content h1,
+.hero-content h2 {
+  font-family: inherit; /* чтобы шрифт был одинаковый */
+  font-size: 3rem;
+  font-weight: bold;
+  background: linear-gradient(90deg, aquamarine, #4ef0d8);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  opacity: 0.85;
+  margin: 0;
+}
+
+.hero-content h2 {
+  font-size: 2.5rem; /* чуть меньше */
+  margin-top: 0.5rem;
+}
+
+
+
+.media-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.call-anim {
+    animation: call 2s ease 0s infinite normal forwards;
+}
+
+@keyframes call {
+	0%,
+	100% {
+		transform: translateX(0%);
+		transform-origin: 50% 50%;
+	}
+
+	15% {
+		transform: translateX(-30px) rotate(-6deg);
+	}
+
+	30% {
+		transform: translateX(15px) rotate(6deg);
+	}
+
+	45% {
+		transform: translateX(-15px) rotate(-3.6deg);
+	}
+
+	60% {
+		transform: translateX(9px) rotate(2.4deg);
+	}
+
+	75% {
+		transform: translateX(-6px) rotate(-1.2deg);
+	}
+}
+
+
+@media (max-width: 755px) {
+    .carousel-indicators {
+        display: none;
+    }
+}
+h3{
+  color: aqua;
+}
+
+/* --- Outdoor Ads custom additions --- */
+.video-text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 2rem;
+  z-index: 3;
+}
+
+.video-text h1 {
+  font-size: clamp(2rem, 4vw + 1rem, 5rem);
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  text-shadow: 0 6px 30px rgba(0,0,0,0.5);
+}
+
+.work-buttons .btn {
+  border-radius: 9999px;
+  padding: 0.5rem 1rem;
+  backdrop-filter: blur(2px);
+}
+
+.card.bg-dark {
+  background: rgba(0,0,0,0.35) !important;
+  border: 1px solid rgba(255,255,255,0.08);
+}
+.card.bg-dark .card-text {
+  color: aquamarine;
+}
+
+
+/* --- CTA button styles (use existing aquamarine theme) --- */
+.btn-cta {
+  border: 2px solid aquamarine;
+  color: aquamarine;
+  background: transparent;
+  font-weight: 600;
+  padding: 0.9rem 1.25rem;
+  border-radius: 14px;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+.btn-cta:hover, .btn-cta:focus {
+  background: aquamarine;
+  color: #0b0f1a;
+}
+
+/* Improve video overlay text sizing on small screens */
+@media (max-width: 576px) {
+  .video-text h1 { font-size: 1.75rem; }
+}
+
+h1{
+  color: aqua;
+}
+/* --- Sunset effect overlay for Kharkiv video --- */
+.hero-video {
+  position: relative;
+}
+
+.hero-video video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  filter: saturate(1.05);
+}
+
+.sunset-overlay {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  /* start with daylight: light transparent cool tint */
+  background: linear-gradient(180deg, rgba(15, 70, 120, 0.10), rgba(0, 0, 0, 0.10));
+  animation: sunsetTint 22s ease-in-out infinite alternate;
+  z-index: 2;
+}
+
+/* Overlay headline stays above overlay */
+.video-text { z-index: 3; }
+
+@keyframes sunsetTint {
+  0% {
+    background: linear-gradient(180deg, rgba(15, 70, 120, 0.10), rgba(0, 0, 0, 0.10));
+  }
+  50% {
+    background: linear-gradient(180deg, rgba(255, 120, 0, 0.18), rgba(0, 0, 0, 0.18));
+  }
+  100% {
+    background: linear-gradient(180deg, rgba(255, 140, 40, 0.28), rgba(0, 0, 0, 0.35));
+  }
+}
+
+/* Accessibility: reduce motion */
+@media (prefers-reduced-motion: reduce) {
+  .sunset-overlay { animation: none; }
+}
+
+
+/* --- Smooth scroll for anchor links --- */
+html { scroll-behavior: smooth; }
+
+/* --- Decorative contacts block --- */
+.contacts-section {
+  background: linear-gradient(135deg, rgba(0, 128, 128, 0.25), rgba(0, 0, 0, 0.6));
+  border-top: 1px solid rgba(255,255,255,0.08);
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+}
+.contacts-title {
+  letter-spacing: 0.02em;
+  text-shadow: 0 6px 24px rgba(0,0,0,0.35);
+}
+.contact-icon {
+  width: 40px;
+  height: 40px;
+  filter: drop-shadow(0 6px 18px rgba(0,255,200,0.25));
+}
+.contact-number {
+  font-size: clamp(1.5rem, 2.5vw, 2.25rem);
+  font-weight: 800;
+  letter-spacing: 0.03em;
+  color: aquamarine;
+  text-shadow: 0 10px 28px rgba(0,0,0,0.45);
+}
+.contact-name {
+  opacity: 0.9;
+  font-size: 1rem;
+}
+
+/* --- Logo A bigger + glow --- */
+.navbar-brand img {
+  height: 64px; /* was smaller; make A visibly bigger */
+  filter: drop-shadow(0 6px 22px rgba(0,255,200,0.25));
+}
+@media (max-width: 576px) {
+  .navbar-brand img { height: 52px; }
+}
+
+
+/* --- Full-width hero with video background --- */
+.hero-full {
+  position: relative;
+  inset: 0;
+  width: 100%;
+  min-height: 80vh;
+  overflow: hidden;
+}
+.hero-full .hero-video video {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: saturate(1.05);
+  z-index: 1;
+}
+.hero-full .video-text.content-center {
+  position: relative;
+  z-index: 3;
+  display: grid;
+  place-items: center;
+  text-align: center;
+  min-height: 80vh;
+  padding: 2rem;
+}
+.hero-full .video-text h1 {
+  font-size: clamp(2rem, 5vw, 4.5rem);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  text-shadow: 0 8px 30px rgba(0,0,0,0.5);
+  margin-bottom: 0.75rem;
+}
+.hero-full .video-text p#hero-tagline {
+  max-width: 900px;
+  margin: 0 auto;
+  line-height: 1.5;
+  opacity: 0.95;
+}
+
+/* Optional subtle dark gradient for readability */
+.hero-full::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(0,0,0,0.25), rgba(0,0,0,0.45));
+  z-index: 2;
+}
+
+/* Keep sunset tint if present */
+.sunset-overlay { z-index: 2; }
+
+
+/* --- Hero video full width top --- */
+.hero-full{position:relative;width:100%;min-height:80vh;overflow:hidden}
+.hero-full .hero-video video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:1;filter:saturate(1.05)}
+.hero-full .video-text.gentle{position:relative;z-index:3;min-height:80vh;display:grid;place-items:center;text-align:center;padding:2rem}
+.hero-full .video-text.gentle h1{font-size:clamp(2rem,5vw,4.5rem);font-weight:800;letter-spacing:.06em;text-transform:uppercase;
+  color:rgba(255,255,255,.92);text-shadow:0 8px 30px rgba(0,0,0,.55)}
+
+/* Dark gradient overlay for readability */
+.hero-full::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.2),rgba(0,0,0,.45));z-index:2}
+
+/* --- Horizontal card track --- */
+.card-track{display:grid;grid-auto-flow:column;grid-auto-columns:80%;gap:16px;overflow-x:auto;scroll-snap-type:x mandatory;padding-bottom:.5rem}
+.work-card{scroll-snap-align:center;background:rgba(0,0,0,.35);border:1px solid rgba(255,255,255,.08);border-radius:16px;overflow:hidden}
+.work-card img{display:block;width:100%;height:280px;object-fit:cover}
+.work-card .caption{padding:.5rem .75rem;color:aquamarine;font-weight:600}
+.footer-text {
+    font-size: clamp(1.5rem, 3vw, 2.5rem);
+    font-weight: bold;
+    color: aquamarine;
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+}
+
+
+/* Wider on desktop */
+@media (min-width:992px){
+  .card-track{grid-auto-columns:calc(33% - 10px)}
+  .work-card img{height:220px}
+}
+
+/* Sidebar */
+.sticky-md-top{position:sticky;top:80px}
+.gallery-section h3{margin-bottom:.5rem}/* жовта кнопка, текст аквамарин */
+.btn-call{
+  background: linear-gradient(90deg,#FFD54F,#FFC107);
+  color: aquamarine;
+  font-weight: 700;
+  border: 0;
+  padding: 12px 18px;
+  border-radius: 12px;
+  width: 100%;
+  max-width: 640px;
+  text-shadow: 0 2px 10px rgba(0,0,0,.35);
+}
+.btn-call:hover{ filter: brightness(1.05); }
+
+/* плавне появлення номера під кнопкою */
+.phone-reveal{
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: max-height .45s ease, opacity .35s ease;
+  text-align: center;
+  margin-top: 10px;
+}
+.phone-reveal a{
+  color: aquamarine;
+  font-weight: 800;
+  font-size: clamp(1.2rem,2.7vw,1.8rem);
+  text-decoration: none;
+}
+/* Универсальное выравнивание карточек */
+.card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+/* Фото в карточках — одинаковой высоты и без пустот */
+.card-img-top {
+  width: 100%;
+  height: 240px;      /* фиксированная высота */
+  object-fit: cover;  /* заполняет блок без искажений */
+  display: block;
+}
+
+/* Контент внутри карточки */
+.card-body {
+  flex: 1 1 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-text {
+  margin-bottom: auto; /* текст занимает доступное место */
+}
+
+.card-footer,
+.btn {
+  margin-top: auto;    /* кнопка или футер внизу */
+}
+
+
